@@ -1,6 +1,6 @@
-// $('.exemples__slider').slick({
-//     dots: true
-// });
+$('.exemples__slider').slick({
+    dots: true
+});
 let productsBtn = document.querySelector('.products__btn');
 let productsList = document.querySelector('.products__list--hiden');
 
@@ -24,6 +24,18 @@ productsBtn.addEventListener('click', function () {
 //     function() { 
 //       // Скрываем блок 
 //       $(".products__list--hiden").fadeOut(); // fadeOut - плавное исчезновение 
+//       return false; // не производить переход по ссылке
+//     }); // end of toggle() 
+//   }); // end of ready() 
+// $(document).ready(function() { 
+//     $("A#trigger").toggle(function() { 
+//       // Отображаем скрытый блок 
+//       $("DIV#box").fadeIn(); // fadeIn - плавное появлени
+//       return false; // не производить переход по ссылке
+//     },  
+//     function() { 
+//       // Скрываем блок 
+//       $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение 
 //       return false; // не производить переход по ссылке
 //     }); // end of toggle() 
 //   }); // end of ready() 

@@ -1,7 +1,8 @@
-.exemples__item {
+/* .exemples__item {
     width: 100%;
-    grid-template-columns: 24.43% 9.16% 32.82% 9.16% 24.43%;
+    grid-template-columns: 1fr 1fr 1fr ;
     display: grid;
+    gr
 }
 .exemples__title{
     margin-top: 80px;
@@ -11,7 +12,7 @@ font-weight: 400;
 font-size: 55px;
 line-height: 130%;
 text-transform: uppercase;
-background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%), radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #780101;
+background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%), radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%), #780101;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
@@ -77,5 +78,72 @@ text-align: center;
     .slick-dots{
         bottom: -45px !important;
     }
+} */
+html{
+    overflow-x: hidden;
 }
+.exemples__slider{
 
+    width: 1050px;
+    margin: 0 auto;
+}
+.exemples__item-for-slider{
+    width: 100%;
+}
+.exemples__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.exemples__image{
+    width: 100%;
+}
+.slick-next{
+    background-image: url(../img/Vector.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 57px 20px; 
+    width: 57px !important; 
+    height: 20px;
+    right: -110px;
+}
+.slick-prev{
+    background-image: url(../img/Vector.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 57px 20px; 
+    transform: rotate(180deg);
+    width: 57px !important;
+    height: 20px;
+    left: -110px;
+}
+@media (max-width:1280px) {
+    .exemples__slider{
+
+        width: 870px;
+        margin: 0 auto;
+    }
+    .slick-next{
+        right: -90px;
+    }
+    .slick-prev{
+        left: -90px;
+    }
+    .exemples__item{
+        grid-gap: 30px;
+    }
+}
+@media (max-width:1030px){
+    .exemples__item{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .exemples__slider{
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .slick-next{
+        right:  3px !important;
+    }
+    .slick-prev{
+        left: 3px !important;
+    }
+}
