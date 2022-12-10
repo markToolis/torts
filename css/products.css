@@ -9,7 +9,7 @@
 
 
 .container {
-	width: 1310px;
+	width: 1280px;
 	margin: 0 auto;
 }
 
@@ -20,23 +20,197 @@
 	font-size: 55px;
 	line-height: 130%;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 100px;
 
 	background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	/* text-fill-color: transparent; */
 	background-clip: text;
+	text-transform: uppercase;
 }
 
 .products__list {
-	padding-top: 60px;
+	padding-top: 70px;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-row-gap: 60px;
-	
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+
 }
+
+.products__item,
+.products__image {
+	width: 100%;
+}
+.products__item{
+	position: relative;
+}
+
+.products__btn {
+	width: 210px;
+	height: 70px;
+	margin-top: 70px;
+	font-family: 'Comfortaa';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 130%;
+	color: #FEFEFE;
+	background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%);
+	border-radius: 20px;
+	border: none;
+	text-transform: uppercase;
+	padding-top: 8px;
+}
+
+.productd__button {
+	display: none;
+	width: 100%;
+	height: 52px;
+	background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%);
+	border-radius: 0px 0px 28px 28px;
+	font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 130%;
+color: rgb(255, 255, 255);
+border: none	;
+text-transform: uppercase;
+
+}
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:0;
+}
+45% {
+opacity:0;
+}
+55% {
+opacity:1;
+}
+100% {
+opacity:1;
+}
+}
+
+.products__list--hiden{
+	display: none;
+	opacity: 0;
+	transition: 1s;
+	/* padding-top: 50px;
+	opacity: 0;
+	transition: 1s; */
+}
+.products__list--active{
+	display: grid;
+	opacity: 1;
+	transition: 1s;
+}
+
+@media (max-width:1290px) {
+	.container {
+		width: 1050px;
+	}
+
+	.products__list {
+		grid-gap: 30px;
+	}
+}
+
+@media (max-width:1060px) {
+	.container {
+		width: 100%;
+		padding: 0px 30px 0 30px;
+	}
+}
+
+@media (max-width:1030px) {
+	.products__list {
+		padding-top: 50px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 24px;
+	}
+
+	.products__title {
+		font-size: 36px;
+		line-height: 43px;
+		padding-top: 80px;
+	}
+
+	.products__btn {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width:500px) {
+	.products__image{
+	}
+	.products__list {
+		padding-top: 30px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.products__title {
+		font-size: 28px;
+		line-height: 130%;
+		padding-top: 50px;
+	}
+
+	.products__btn {
+		width: 100%;
+		height: 60px;
+		margin-top: 40px;
+		font-family: 'Comfortaa';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 130%;
+		color: #FEFEFE;
+		background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%);
+		border-radius: 20px;
+		border: none;
+		text-transform: uppercase;
+		padding-top: 8px;
+	}
+	.products__container{
+		top:auto;
+		bottom: 0;
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+border-radius: 0px 0px 28px 28px;
+	}
+	.productd__button{
+		display: block;
+		/* margin-top: -56px; */
+		z-index: 9;
+	}
+}
+
+@media (max-width:400px) {
+	.container {
+		padding: 0 16px 0 16px;
+	}
+
+	.products__list {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 16px;
+	}
+
+	.products__title {
+		font-size: 24px;
+		line-height: 130%;
+	}
+
+	.products__btn {
+		margin-top: 30px;
+	}
+}
+
+/*
 .products__item{
 	width: 320px;
 	height: 340px;
@@ -71,29 +245,13 @@ line-height: 130%;
 color: rgb(255, 255, 255);
 width: 292px;
 height: 46px;
-background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%)
 border-radius: 0px 0px 20px 20px;
 text-transform: uppercase;
 border: none;
 display: none;
-}
-.products__btn{
-	width: 210px;
-height: 70px;
-margin-top: 60px;
-font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 130%;
-color: #FEFEFE;
-background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-border-radius: 20px;
-border: none;
-text-transform: uppercase;
-padding-top: 8px;
-}
-@media (max-width:1310px){
+} */
+/* @media (max-width:1310px){
 	.container{
 		width: 100%;
 		padding-right: 35px;
@@ -201,4 +359,4 @@ padding-top: 8px;
 font-size: 28px;
 margin-top: 40px;																																																																								
 	}
-}
+} */
