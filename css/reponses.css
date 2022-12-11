@@ -1,0 +1,116 @@
+.reponses__item {
+  padding-right: 20px;
+  height: auto;
+}
+.reponses__box{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.reponses__block{
+  width: 840px;
+  background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, rgba(250, 143, 33, 0.7) 0%, rgba(216, 45, 126, 0.7) 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+border-radius: 28px;
+height: 100%;
+}
+.reponses__image{
+  width: 390px;
+  height: 100%;
+}
+.reponses__item{
+  margin-left: 32px;
+  height: auto;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.reponses__item--big{
+  height: auto;
+}
+.reponses__item--border_none{
+  border: none;
+}
+.reponses__item img{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.reponses__text{
+  padding: 22px 0 20px 0;
+  font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.response__mini-box{
+  display: flex;
+}
+.response__hiden-text{
+  font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #ffffff;
+padding-bottom: 15px;
+display: none;
+  /* display: none; */
+}
+.response__hiden-text--active{
+  display: block;
+}
+.btn{
+  transition: 0.2s;
+}
+.btn--active{
+  transform: rotate(45deg);
+}
+@media (max-width:1280px) {
+  .reponses__image{
+    width: 320px;
+    height: 100%;
+  }
+  .reponses__block{
+    width: 690px;
+    height: auto;
+    background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, rgba(250, 143, 33, 0.7) 0%, rgba(216, 45, 126, 0.7) 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+}
+@media (max-width:1050px) {
+  .reponses__image{display: none;}
+  .reponses__block{
+    width: 100%;
+    background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, rgba(250, 143, 33, 0.7) 0%, rgba(216, 45, 126, 0.7) 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 28px;
+  }
+}
+@media (max-width:740px) {
+  .reponses{
+    background: linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%);
+  }
+  .reponses__text{
+    font-size: 15px;
+  }
+  .reponses__box{
+    padding-top: 40px;
+  }
+  .reponses__hiden-text{
+    font-size: 12px;
+  }
+}
+@media (max-width:400px){
+  .reponses__text{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
+  .reponses__item {
+    padding-right: 20px;
+    height: auto;
+  }
+}

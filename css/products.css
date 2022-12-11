@@ -13,8 +13,8 @@
 	margin: 0 auto;
 }
 
-.products__title {
-	font-family: 'Lato';
+.products__title, .title {
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 55px;
@@ -133,7 +133,7 @@ opacity:1;
 		grid-gap: 24px;
 	}
 
-	.products__title {
+	.products__title, .title  {
 		font-size: 36px;
 		line-height: 43px;
 		padding-top: 80px;
@@ -152,7 +152,7 @@ opacity:1;
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	.products__title {
+	.products__title, .title  {
 		font-size: 28px;
 		line-height: 130%;
 		padding-top: 50px;
@@ -200,7 +200,7 @@ border-radius: 0px 0px 28px 28px;
 		grid-gap: 16px;
 	}
 
-	.products__title {
+	.products__title, .title  {
 		font-size: 24px;
 		line-height: 130%;
 	}
