@@ -1,5 +1,10 @@
 $('.exemples__slider').slick({
-    dots: false
+    dots: true
+});
+$('.avis__slider').slick({
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
 });
 let productsBtn = document.querySelector('.products__btn');
 let productsList = document.querySelector('.products__list--hiden');
@@ -44,14 +49,14 @@ btn6.addEventListener('click', function () {
 productsBtn.addEventListener('click', function () {
     // productsList.classList.toggle('products__list--active');
     // productsList.style.display = (productsList.style.display === 'grid') ? 'none' : 'grid';
-    productsBtn.classList.toggle('products__btn--active');
     productsList.classList.toggle('products__list--active');
+    productsBtn.classList.add('products__btn--active');
   })
-  $('.price_tabs-content button').click(function() {
-    const $this = $(this);
-    const on = $this.siblings('p').toggleClass('on').hasClass('on');
-    $this.text(on ? 'Закрыть' : $this.data('text'));
-  }).each((i, n) => $(n).data('text', $(n).text()));
+  // $('.price_tabs-content button').click(function() {
+  //   const $this = $(this);
+  //   const on = $this.siblings('p').toggleClass('on').hasClass('on');
+  //   $this.text(on ? 'Закрыть' : $this.data('text'));
+  // }).each((i, n) => $(n).data('text', $(n).text()));
 //   $(document).ready(function() { 
 //     $(".products__btn").toggle(function() { 
 //       // Отображаем скрытый блок 
