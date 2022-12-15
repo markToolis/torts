@@ -1,0 +1,190 @@
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+.container {
+  max-width: 1269px;
+  margin: 0 auto;
+} 
+
+/* Section First */
+
+.first {
+  background: #f9f9f9;
+}
+
+.header {
+  padding-top: 40px;
+  display: flex;
+  justify-content:space-between;
+}
+
+
+.nav__list {
+  display: flex;
+  padding-inline-start: 0;
+}
+
+.nav__item {
+  padding-left: 40px;
+  list-style-type: none;
+}
+
+.nav__item a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav__item:hover {
+  background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* Section "First" */
+
+.first__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+
+.first__photo {
+  max-width: 440px;
+  border-radius: 30px;
+}
+
+.first__title {
+  font-family: 'Poppins';
+  max-width: 720px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 40px;
+  font-size: 65px;
+  background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.first__subtitle {
+  margin: 50px 0 80px 0;
+  max-width: 720px;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.first__btn {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 20px;
+  padding: 30px 60px;
+}
+
+/* Section "Description" */
+
+.description {
+  background-color: #f9f9f9;
+}
+
+.checks__title {
+  font-family: 'Poppins';
+  font-weight: 500;
+  padding-top: 100px;
+  font-size: 55px;
+  text-align: center;
+  background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.checks__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checks__item {
+  max-width: 390px;
+}
+
+.checks__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.checks__text {
+  text-align: center;
+  line-height: 140%;
+  margin: 20px 0 0;
+}
+
+.learn-process__title {
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%), radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 120px;
+  margin: 0;
+}
+
+.learn-process__subtitle {
+  margin: 70px 0 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.learn-process__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 100px;
+}
+
+.learn-process__item {
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(60, 60, 67, 0.36);
+  border-radius: 28px;
+  background: white;
+}
+
+
+.learn-process__item--color {
+  background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, rgba(250, 143, 33, 0.7) 0%, rgba(216, 45, 126, 0.7) 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #DCC2C5;
+}
+
+.learn-process__logo {
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.learn-process__text {
+  margin: 15px 0 0;
+  text-align: center;
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0 12px;
+}
+
+.learn-process__text--color {
+  color: white;
+}
+
+.learn-process__item--margin {
+  margin-top: 50px;
+}
