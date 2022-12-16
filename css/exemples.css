@@ -260,3 +260,41 @@ html{
         max-height: 530px   ;
     }
 }
+@media (max-width:580px){
+    .exemples__image{
+        max-height: 500px   ;
+    }
+}
+@media (max-width:540px){
+    .exemples__image{
+        max-height: 470px   ;
+    }
+}
+@media (max-width:500px){
+    .exemples__image{
+        max-height: 440px   ;
+    }
+}
+@media (max-width:460px){
+    .exemples__image{
+        max-height: 410px   ;
+    }
+}
+@media (max-width:420px){
+    .exemples__image{
+        max-height: 365px   ;
+    }
+}
+@media (max-width:380px){
+    .exemples__image{
+        max-height: 340px   ;
+    }
+}
+@media (max-width:340px){
+    .exemples__image{
+        max-height: 315px   ;
+    }
+}
+.reponses__block{
+    transition: 1s;
+}

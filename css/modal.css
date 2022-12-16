@@ -1,0 +1,114 @@
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px);
+}
+.modal__title{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 120%;
+color: #FFFFFF;
+padding-bottom: 40px;
+text-align: center;
+}
+.modal__image{
+  display: block;
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  left: auto;
+  transform: rotate(0deg) !important;
+  cursor: pointer;
+}
+.modal--active{
+  display: block;
+}
+.modal__container{
+  width: 540px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+.modal__slider{
+  width: 100%;
+}
+.mslider__item{
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.modal .slick-dots{
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -0%)
+}
+.modal .slick-dots li{
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  padding: 0;
+  margin: 0;
+}
+.modal .slick-dots li button{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: #D9D9D9;
+}
+.modal .slick-next{
+  background-image: url(../img/Vector12.svg) !important;
+  right: -80px;
+}
+.modal .slick-prev{
+  background-image: url(../img/Vector12.svg) !important;
+  left: -80px;
+}
+.modal__box{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.modal__button{
+  display: block;
+  width: 189px;
+height: 54px;
+background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%);
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 130%;
+color: #FFFFFF;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+padding-top: 14px;
+border-radius: 20px;
+}
+.modal__text{
+  display: block;
+  font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 130%;
+color: #FFFFFF  ;
+padding-top: 10px;
+}
+@media (max-width:900px){
+
+}
