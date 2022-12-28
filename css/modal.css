@@ -17,6 +17,7 @@ line-height: 120%;
 color: #FFFFFF;
 padding-bottom: 40px;
 text-align: center;
+text-transform: uppercase;
 }
 .modal__image{
   display: block;
@@ -118,6 +119,15 @@ padding-top: 10px;
 }
 .modal__box--mt--40px{
   margin-top: 40px;
+}
+#m3 .slick-dots{
+  width: 72px;
+}
+#m6 .modal__title {
+  width: 551px;
+}
+#m8 .slick-dots{
+  width: 120px;
 }
 @media (max-width:900px){
 
