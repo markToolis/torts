@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +12,12 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="denis_style.css">
   </head>
+  
   <body>
 
     <section class="first">
       <div class="container">
-        <header class="header">
+        <header class="main-menu">
           <img src="/img-denis/logo.svg" alt="" class="logo">
           <nav class="nav">
             <ul class="nav__list">
@@ -35,6 +37,32 @@
             <a href="#" class="first__btn">Сhoisir un cours</a>
           </div>
           <img class="first__photo" src="./img-denis/main-photo.jpg" alt="Main Photo">
+        </div>
+      </div>
+      <div class="window">
+        <div class="header">
+          <div class="burger-wrap">
+            <img class="logo" src="./img-denis/logo.svg">
+            <div class="burger-wrap__right">
+              <a href=""><img src="./img-denis/instagram.svg" alt=""></a>
+              <a class="burger-youtube" href=""><img src="./img-denis/youtube.svg" alt=""></a>
+              <a class="burger-whatsapp" href=""><img src="./img-denis/whatapp.svg" alt=""></a>
+              <div class="burger-container">
+                <div id="burger">
+                  <div class="bar topBar"></div>
+                  <div class="bar btmBar"></div>
+                </div>   
+              </div>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="menu-item"><a class="menu-item--margin" href="#">Acheter un cours</a></li>
+            <li class="menu-item"><a href="#">Nos cours</a></li>
+            <li class="menu-item"><a href="#">Exemples D’oeuvre</a></li>
+            <li class="menu-item"><a href="#">Avis</a></li>
+            <li class="menu-item"><a href="#">Moi-même</a></li>
+            <li class="menu-item"><a href="#">Réponses aux questions</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -108,31 +136,52 @@
               <div class="contacts__left">
                 <a class="instagram">
                   <img class="contacts__images" src="./img-denis/instagram.svg" alt="">
-                  <p class="constacts__text">Abones-nous sur Instagram</p>
+                  <p class="constacts__text">Abones-nous <br> sur <span class="instagram-color">Instagram</span></p>
                 </a>
                 <a href="https://www.whatsapp.com/?lang=ru" class="youtube">
                   <img class="contacts__images" src="./img-denis/youtube.svg" alt="">
-                  <p class="constacts__text">Abones-nous sur Youtube</p>
+                  <p class="constacts__text">Abones-nous <br> sur <span class="youtube-color">Youtube</span> </p>
                 </a>
               </div>
               <div class="contacts__right">
                 <a class="whatapp">
                   <img class="contacts__images" src="./img-denis/whatapp.svg" alt="">
-                  <p class="constacts__text">Écrives-nous à Whats App</p>
+                  <p class="constacts__text">Écrives-nous <br> à <span class="whatapp-color">Whats App</span></p>
                 </a>
                 <a class="email">
                   <img class="contacts__images" src="./img-denis/email.svg" alt="">
-                  <p class="constacts__text">Écrives-nous Artsem@gmail.com</p>
+                  <p class="constacts__text">Écrives-nous <br> <span class="email-color">Artsem@gmail.com</span></p>
                 </a>
               </div>
             </div>
           </div>
           <div class="footer-menu">
             <h2 class="footer-menu__title">Menu</h2>
+            <nav class="footer-nav">
+              <div class="footer-nav__left">
+                <a href="" class="footer-nav__link">Acheter un cours</a>
+                <a href="" class="footer-nav__link footer-nav__link--margin">Nos cours</a>
+                <a href="" class="footer-nav__link footer-nav__link--margin">Exemples D’oeuvre</a>
+              </div>
+              <div class="footer-nav__right">
+                <a href="" class="footer-nav__link">Avis</a>
+                <a href="" class="footer-nav__link footer-nav__link--margin">Moi-même</a>
+                <a href="" class="footer-nav__link footer-nav__link--margin">Réponses aux  questions</a>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
     </footer>
-    
+
+    <script>(function(){
+      var burger = document.querySelector('.burger-container'),
+          header = document.querySelector('.header');
+      
+      burger.onclick = function() {
+          header.classList.toggle('menu-opened');
+      }
+  }());</script>
+
   </body>
 </html>
