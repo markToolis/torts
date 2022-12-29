@@ -1,3 +1,6 @@
+/* Main Styles */
+
+
 body {
   font-family: 'Comfortaa', cursive;
 }
@@ -8,7 +11,11 @@ body {
 } 
 
 
+
+
+
 /* Section "First" */
+
 
 .first {
   background: #f9f9f9;
@@ -46,7 +53,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 
 .first__content {
   display: flex;
@@ -142,8 +148,9 @@ body {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .window {
   position: relative;
@@ -158,7 +165,7 @@ body {
   justify-content: space-between;
 }
 
-.burger-youtube, .burger-whatsapp{
+.burger-youtube, .burger-whatsapp {
   margin-left: 25px;
 }
 
@@ -183,7 +190,6 @@ body {
           transition-delay: 0.2s;
   z-index: 1;
 }
-
 
 .window .header .burger-container {
   position: relative;
@@ -442,7 +448,9 @@ body {
 
 
 
+
 /* Section "Description" */
+
 
 .description {
   background-color: #f9f9f9;
@@ -516,7 +524,6 @@ body {
   background: white;
 }
 
-
 .learn-process__item--color {
   background: radial-gradient(113.12% 113.12% at 1.88% 89.38%, rgba(250, 143, 33, 0.7) 0%, rgba(216, 45, 126, 0.7) 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #DCC2C5;
 }
@@ -543,6 +550,8 @@ body {
 .learn-process__item--margin {
   margin-top: 50px;
 }
+
+
 
 
 
@@ -597,8 +606,8 @@ body {
 
 
 
-
 /* Footer */
+
 
 .footer {
   padding: 100px 0;
@@ -719,6 +728,7 @@ body {
 
 /* Main Media */
 
+
 @media (max-width: 1329px) {
   .container {
     max-width: 1050px;
@@ -734,7 +744,9 @@ body {
 
 
 
+
 /* Media for Section "First" */
+
 
 @media (max-width: 1329px) {
   
@@ -869,8 +881,8 @@ body {
 
 
 
-
 /* Media for Section "Description" */
+
 
 @media (max-width: 1329px) {
   .checks__title, .learn-process__title {
@@ -935,7 +947,6 @@ body {
   }
 }
 
-
 @media (max-width: 945px) {
   .learn-process__item {
     height: 220px;
@@ -967,8 +978,8 @@ body {
 
 
 
-
 /* Media for Section "About" */
+
 
 @media (max-width: 1329px) {
   .about__photo {
@@ -1069,7 +1080,9 @@ body {
 
 
 
+
 /* Media for Footer */
+
 
 @media (max-width: 1329px) {
   .contacts__left, .contacts__right {
