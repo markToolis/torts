@@ -1,0 +1,131 @@
+.box {
+	width: 610px;
+	display: block;
+	margin: 0 auto;
+}
+p {
+	margin: 0;
+	font-family: "Comfortaa";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 130.02%;
+	/* or 22px */
+
+	color: #000000;
+	margin-bottom: 10px;
+}
+h1 {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 120%;
+	background: linear-gradient(90deg, #c84e89 0%, #f15f79 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-transform: uppercase;
+	width: 608px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+form {
+    margin-top: 40px;
+}
+input {
+	width: 100%;
+	height: 60px;
+	border-radius: 16px;
+	border: 2px solid #c7c7cc;
+	margin-bottom: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+input::placeholder {
+    font-family: "Comfortaa";
+    font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130.02%;
+font-family: "Comfortaa";
+margin-top: 40px;
+}
+input {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 130.02%;
+}
+.email {
+	margin-bottom: 40px;
+}
+.text {
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+img {
+	width: 120px;
+	margin-right: 30px;
+}
+input:out-of-range{
+    color: red;
+}
+.form__box {
+	display: flex;
+}
+.form__container p {
+	font-family: "Comfortaa";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 140%;
+    color: #D82D7E;
+}
+
+.big-text {
+	font-family: "Comfortaa" !important;
+	font-style: normal !important;
+	font-weight: 700 !important;
+	font-size: 22px !important;
+	line-height: 140% !important;
+    color: #000000 !important;
+}
+
+button {
+    position: relative;
+    width: 100%;
+height: 68px;
+background: linear-gradient(0deg, #FFC43A, #FFC43A), radial-gradient(113.12% 113.12% at 1.88% 89.38%, #FA8F21 0%, #D82D7E 79.31%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+border-radius: 16px;
+border: none;
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+margin-top: 40px;
+}
+.button__box{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.button__box p{
+    margin-top: 15px;
+    margin-right: 12px;
+    width: 80px;
+}
+@media (max-width:670px) {
+    .box{
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    h1 {
+        width: 100%;
+    }
+}

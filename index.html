@@ -17,6 +17,8 @@
 			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/denis-style.css">
 		<link rel="stylesheet" href="./css/products.css" />
 		<link rel="stylesheet" href="./css/exemples.css" />
 		<link rel="stylesheet" href="./css/reponses.css" />
@@ -24,6 +26,57 @@
 		<link rel="stylesheet" href="./css/modal.css" />
 	</head>
 	<body>
+		<section class="first">
+			<div class="container">
+			  <header class="main-menu">
+				<img src="/img/logod.svg" alt="" class="logo">
+				<nav class="nav">
+				  <ul class="nav__list">
+					<li class="nav__item"><a href="">Acheter un cours</a></li>
+					<li class="nav__item"><a href="">Nos cours</a></li>
+					<li class="nav__item"><a href="">Exemples D’oeuvre</a></li>
+					<li class="nav__item"><a href="">Avis</a></li>
+					<li class="nav__item"><a href="">Moi-même</a></li>
+					<li class="nav__item"><a href="">Réponses aux questions</a></li>
+				  </ul>
+				</nav>
+			  </header>
+			  <div class="first__content">
+				<div class="CTA-block">
+				  <h1 class="first__title">COURS DE PÂTISSERIE EN LIGNE</h1>
+				  <p class="first__subtitle">Devenez un vrai pâtissier et commencez à gagner de l'argent avec votre passion!</p>
+				  <a href="#" class="first__btn">Сhoisir un cours</a>
+				</div>
+				<img class="first__photo" src="./img/main-photo.jpg" alt="Main Photo">
+			  </div>
+			</div>
+			<div class="window">
+			  <div class="header">
+				<div class="burger-wrap">
+				  <img class="logo" src="./img/logod.svg">
+				  <div class="burger-wrap__right">
+					<a class="burger-instagram" href=""><img src="./img/instagram.svg" alt=""></a>
+					<a class="burger-youtube" href=""><img src="./img/youtube.svg" alt=""></a>
+					<a class="burger-whatsapp" href=""><img src="./img/whatapp.svg" alt=""></a>
+					<div class="burger-container">
+					  <div id="burger">
+						<div class="bar topBar"></div>
+						<div class="bar btmBar"></div>
+					  </div>   
+					</div>
+				  </div>
+				</div>
+				<ul class="menu">
+				  <li class="menu-item"><a class="menu-item--margin" href="#">Acheter un cours</a></li>
+				  <li class="menu-item"><a href="#">Nos cours</a></li>
+				  <li class="menu-item"><a href="#">Exemples D’oeuvre</a></li>
+				  <li class="menu-item"><a href="#">Avis</a></li>
+				  <li class="menu-item"><a href="#">Moi-même</a></li>
+				  <li class="menu-item"><a href="#">Réponses aux questions</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </section>
 		<section class="products">
 			<div class="modal" id="m1">
 				<img src="./img/Group.svg" alt="" class="modal__image" id="b1" />
@@ -45,7 +98,7 @@
 						</div>
 					</div>
 					<div class="modal__box">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form.php" class="modal__button">acheter</a>
 						<p class="modal__text">€199 EURO</p>
 					</div>
 				</div>
@@ -68,7 +121,7 @@
 						</div>
 					</div>
 					<div class="modal__box">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form2.php" class="modal__button">acheter</a>
 						<p class="modal__text">€149 EURO</p>
 					</div>
 				</div>
@@ -85,7 +138,7 @@
 						</div>
 					</div>
 					<div class="modal__box">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form3.php" class="modal__button">acheter</a>
 						<p class="modal__text">€49 EURO</p>
 					</div>
 				</div>
@@ -96,7 +149,7 @@
 					<h2 class="modal__title">la pàte au sucre</h2>
 					<img src="./img/40.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form4.php" class="modal__button">acheter</a>
 						<p class="modal__text">€49 EURO</p>
 					</div>
 				</div>
@@ -108,7 +161,7 @@
 						“béton”</h2>
 					<img src="./img/50.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form5.php" class="modal__button">acheter</a>
 						<p class="modal__text">€29 EURO</p>
 					</div>
 				</div>
@@ -119,7 +172,7 @@
 					<h2 class="modal__title">technique de décorationeffet velours</h2>
 					<img src="./img/60.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form6.php" class="modal__button">acheter</a>
 						<p class="modal__text">€19 EURO</p>
 					</div>
 				</div>
@@ -130,7 +183,7 @@
 					<h2 class="modal__title">nunbercake au miel “numbercake”</h2>
 					<img src="./img/70.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form7.php" class="modal__button">acheter</a>
 						<p class="modal__text">€19 EURO</p>
 					</div>
 				</div>
@@ -152,7 +205,7 @@
 						</div>
 					</div>
 					<div class="modal__box">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form8.php" class="modal__button">acheter</a>
 						<p class="modal__text">€19 EURO</p>
 					</div>
 				</div>
@@ -163,7 +216,7 @@
 					<h2 class="modal__title">décorations en papier de riz</h2>
 					<img src="./img/90.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form9.php" class="modal__button">acheter</a>
 						<p class="modal__text">€19 EURO</p>
 					</div>
 				</div>
@@ -174,7 +227,7 @@
 					<h2 class="modal__title">2 types de cupcakes</h2>
 					<img src="./img/100.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form10.php" class="modal__button">acheter</a>
 						<p class="modal__text">€19 EURO</p>
 					</div>
 				</div>
@@ -185,12 +238,12 @@
 					<h2 class="modal__title">2voile et vase en isomalt</h2>
 					<img src="./img/110.jpg" alt="" class="mslider__item" />
 					<div class="modal__box modal__box--mt--40px">
-						<a href="" class="modal__button">acheter</a>
+						<a href="./form/form11.php" class="modal__button">acheter</a>
 						<p class="modal__text">€19 EURO</p>
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container-2">
 				<h2 class="products__title">Sur l'apprentissage</h2>
 				<div class="products__list">
 					<div class="products__item">
@@ -275,11 +328,131 @@
 				</div>
 			</div>
 		</section>
-		<section class="exemples">
+		<section class="description">
 			<div class="container">
+			  <div class="checks">
+				<h2 class="checks__title">À QUI CES COURS CONVIENNENT-ILS?</h2>
+				<div class="checks__cards">
+				  <div class="checks__item">
+					<img class="checks__logo" src="./img/check.svg" alt="">
+					<p class="checks__text">Les débutants qui veulent déjà essayer de commencer de faire les gâteaux personnalisé mais ne savent pas comment commencer</p>
+				  </div>
+				  <div class="checks__item">
+					<img class="checks__logo" src="./img/check.svg" alt="">
+					<p class="checks__text">Pâtissiers avec de l'expérience qui veut gagner beaucoup plus et devient plus populaire, en faisant leur affaires préférées</p>
+				  </div>
+				  <div class="checks__item">
+					<img class="checks__logo" src="./img/check.svg" alt="">
+					<p class="checks__text">Tous ceux qui rêvent d'apprendre à cuisiner de superbes chefs-d'œuvre dans la cuisine à domicile</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="learn-process">
+				<h2 class="learn-process__title">COMMENT SE DÉROULE LA FORMATION?</h2>
+				<p class="learn-process__subtitle">Ce cours est préenregistré en français + sous la vidéo il y a desinstructions textuelles. <br>Cependant, vous pouvez traduire tous lesdocuments écrits. <br>Les vidéos sont faites aussi clair que possible!</p>
+				<div class="learn-process__cards">
+				  <div class="learn-process__item learn-process__item--color grid-one">
+					<img class="learn-process__logo" src="./img/learn-card1.svg" alt="">
+					<p class="learn-process__text learn-process__text--color">Ajoutez les cours souhaités au panier et effectuez le paiement</p>
+				  </div>
+				  <div class="learn-process__item learn-process__item--margin grid-two">
+					<img class="learn-process__logo" src="./img/learn-card2.svg " alt="">
+					<p class="learn-process__text">Voir les cours achetés sur notre plate-forme d'apprentissage à partir de votre téléphone, tablette ou ordinateur</p>
+				  </div>
+				  <div class="learn-process__item learn-process__item--color grid-three">
+					<img class="learn-process__logo" src="./img/learn-card3.svg" alt="">
+					<p class="learn-process__text learn-process__text--color">Faites simplement la même chose que Natalia dans les cours vidéo et créez de superbes desserts. Vous aurez accès à vie à la formation</p>
+				  </div>
+				  <div class="learn-process__item learn-process__item--margin grid-four">
+					<img class="learn-process__logo" src="./img/learn-card4.svg" alt="">
+					<p class="learn-process__text">Si vous avez des questions dans le processus d'apprentissage, vous pouvez les écrire Natalia Pousaz dans WhatsApp!</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<section class="exemples">
+			<div class="container-2">
 				<h2 class="exemples__title title">Exemples D’oeuvre</h2>
+				<div class="exemples__slider exemples__slider--heden">
+					<div class="exemples__item-for-slider">
+						<img src="./img/slide1.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/slide2.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/slide3.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/slide4.jpg" alt="">
+					</div>
+				</div>
+				<div class="exemples__slider exemples__slider--heden exemples__slider--heden-2">
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2044.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2045.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2046.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2047.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2048.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2049.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2050.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2051.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2052.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2053.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2055.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2056.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2057.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2058.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2059.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2060.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/Frame 2061.jpg" alt="">
+					</div>
+
+				</div>
 				<div class="exemples__slider">
 					<div class="exemples__item-for-slider">
+						<img src="./img/slider_1.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/slider_2.jpg" alt="">
+					</div>
+					<div class="exemples__item-for-slider">
+						<img src="./img/slider_3.jpg" alt="">
+					</div>
+					<!-- <div class="exemples__item-for-slider">
 						<div class="exemples__item">
 							<img
 								src="./img/q7.jpg"
@@ -380,7 +553,7 @@
 								class="exemples__image exemples__image--hiden"
 							/>
 						</div>
-					</div>
+					</div> -->
 					<!-- <div
 						class="exemples__item-for-slider exemples__item-for-slider--mini"
 					>
@@ -406,10 +579,11 @@
 				</div>
 			</div>
 		</section>
+		
 		<section class="avis">
-			<div class="container">
+			<div class="container-2">
 				<h2 class="avis__title title">Avis</h2>
-				<div class="avis__slider">
+				<div class="avis__slider avis__slider--3">
 					<div class="avis__item">
 						<img src="./img/iPhone-1.png" alt="" class="avis__image" />
 					</div>
@@ -438,19 +612,60 @@
 						<img src="./img/iPhone-9.png" alt="" class="avis__image" />
 					</div>
 				</div>
+				<div class="avis__slider avis__slider--1">
+					<div class="avis__item">
+						<img src="./img/Frame 1.png" alt="" class="avis__image" />
+					</div>
+					<div class="avis__item">
+						<img src="./img/Frame 2.png" alt="" class="avis__image" />
+					</div>
+					<div class="avis__item">
+						<img src="./img/Frame 3.png" alt="" class="avis__image" />
+					</div>
+				</div>
+				<div class="avis__slider avis__slider--2">
+					<div class="avis__item">
+						<img src="./img/Frame.png" alt="" class="avis__image" />
+					</div>
+					<div class="avis__item">
+						<img src="./img/Frame 4.png" alt="" class="avis__image" />
+					</div>
+					<div class="avis__item">
+						<img src="./img/Frame 5.png" alt="" class="avis__image" />
+					</div>
+					<div class="avis__item">
+						<img src="./img/Frame 6.png" alt="" class="avis__image" />
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="reponses">
+		<section class="about">
 			<div class="container">
+			  <h2 class="about__title--hidden">À PROPOS DE L'AUTEUR</h2>
+			  <div class="about__content">
+				<img class="about__photo" src="./img/about.jpg" alt="">
+				<div class="about__text-content">
+				  <h2 class="about__title">À PROPOS DE L'AUTEUR</h2>
+				  <p class="about__text about__text--first">Natalia Pousaz - Chef Pâtissier. Elle a fait ses études supérieures à la faculté de Journalisme dans l'une des principales universités du pays mais elle s'est vite rendu compte que c’était pas sa vocation. Ensuite elle est allé étudier la pâtisserie.</p>
+				  <p class="about__text">Au début, comme tout le monde a essayé d'acquérir de l'expérience à la maison , mais il a vite compris qu'elle avait besoin d'apprendre des professionnels.</p>
+				  <p class="about__text">Ensuite, chaque année, elle suit une formation différente sur les techniques les plus complexes et les desserts simples.</p>
+				  <p class="about__text">
+					Maintenant, elle est heureuse de transmettre toutes les connaissances accumulées à ses étudiants du monde entier.</p> 
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<section class="reponses">
+			<div class="container-2">
 				<h2 class="reponses__title title">Réponses aux questions?</h2>
 				<div class="reponses__box">
 					<div class="reponses__block">
 						<div class="reponses__item reponses__item--little">
 							<div class="response__mini-box">
-								<img src="./img/icons08.svg" alt="" id="b1" class="btn" />
+								<img src="./img/icons08.svg" alt="" id="b10" class="btn" />
 								<p class="reponses__text">Comment accéder aux cours?</p>
 							</div>
-							<p class="response__hiden-text" id="h1">
+							<p class="response__hiden-text" id="h10">
 								Ajoutez au panier les cours qui vous intéressent et effectuez le
 								paiement, après le paiement, vous recevrez un lien pour vous
 								connecter à la plate-forme de la formation, où à l'avenir vous
@@ -537,8 +752,78 @@
 				</div>
 			</div>
 		</section>
-		-->
+		<footer class="footer">
+			<div class="container">
+			  <div class="footer-content">
+				<div class="contacts">
+				  <h2 class="contacts__title">Nos contacts</h2>
+				  <div class="contacts__socials">
+					<div class="contacts__left">
+					  <a class="instagram">
+						<img class="contacts__images" src="./img/instagram.svg" alt="">
+						<p class="constacts__text">Abones-nous <br> sur <span class="instagram-color">Instagram</span></p>
+					  </a>
+					  <a href="https://www.whatsapp.com/?lang=ru" class="youtube">
+						<img class="contacts__images" src="./img/youtube.svg" alt="">
+						<p class="constacts__text">Abones-nous <br> sur <span class="youtube-color">Youtube</span> </p>
+					  </a>
+					</div>
+					<div class="contacts__right">
+					  <a class="whatapp">
+						<img class="contacts__images" src="./img/whatapp.svg" alt="">
+						<p class="constacts__text">Écrives-nous <br> à <span class="whatapp-color">Whats App</span></p>
+					  </a>
+					  <a class="email">
+						<img class="contacts__images" src="./img/email.svg" alt="">
+						<p class="constacts__text">Écrives-nous <br> <span class="email-color">Artsem@gmail.com</span></p>
+					  </a>
+					</div>
+				  </div>
+				</div>
+				<div class="footer-menu">
+				  <h2 class="footer-menu__title">Menu</h2>
+				  <nav class="footer-nav">
+					<div class="footer-nav__left">
+					  <a href="" class="footer-nav__link">Acheter un cours</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Nos cours</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Exemples D’oeuvre</a>
+					</div>
+					<div class="footer-nav__right">
+					  <a href="" class="footer-nav__link">Avis</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Moi-même</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Réponses aux  questions</a>
+					</div>
+				  </nav>
+				</div>
+			  </div>
+			</div>
+			<div class="footer-hidden">
+			  <div class="container">
+				<h2 class="footer-hidden__title">Menu</h2>
+				<nav class="footer-hidden-nav">
+				  <div class="footer-hidden-nav__left">
+					<a href="" class="footer-hidden-nav__link">Acheter un cours</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Nos cours</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Exemples D’oeuvre</a>
+				  </div>
+				  <div class="footer-hidden-nav__right">
+					<a href="" class="footer-hidden-nav__link">Avis</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Moi-même</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Réponses aux  questions</a>
+				  </div>
+				</nav>
+			  </div>
+			</div>
+		  </footer>
 	</body>
+	<script>(function(){
+		var burger = document.querySelector('.burger-container'),
+			header = document.querySelector('.header');
+		
+		burger.onclick = function() {
+			header.classList.toggle('menu-opened');
+		}
+	}());</script>
 	<script src="./js/jquery-3.6.0.min.js"></script>
 	<script
 		type="text/javascript"

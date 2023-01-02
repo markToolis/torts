@@ -7,9 +7,19 @@
   width: 1050px;
   margin: 0 auto;
   margin-top: 75px;
+  height: auto;
 }
 .avis__image{
   width: 100%;
+}
+.avis__slider--3{
+  display: none;
+}
+.avis__slider--2{
+  display: none;
+}
+.avis__item {
+  height: auto !important;
 }
 @media (max-width:1280px){
   .avis__slider{
@@ -22,6 +32,7 @@
     width: 100%;
     padding-right: 100px;
     padding-left: 100px;
+    height: auto;
 }
 .avis{
   background: #F9F9F9;
@@ -32,11 +43,26 @@
   margin-top: 40px;
 }
 }
+@media (max-width:900px){
+  .avis__slider--1{
+    display: none;
+  }
+  .avis__slider--2{
+    display: block;
+  }
+}
 @media(max-width:600px){
+  .avis__slider--2{
+    display: none;
+  }
+  .avis__slider--3{
+    display: block;
+  }
   .avis__slider{
     width: 100%;
     padding-right: 50px;
     padding-left: 50px;
+    height: auto;
 }
 .avis{
   background: #F9F9F9;

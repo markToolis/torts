@@ -5,23 +5,7 @@ $('.exemples__slider').slick({
   slidesToScroll: 1,
 });
 $('.avis__slider').slick({
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 650,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-  ]
+  dots: true
 });
 $('.modal__slider').slick({
   dots: true,
@@ -44,6 +28,8 @@ let btn5 = document.querySelector('#b5');
 let ht5 = document.querySelector('#h5');
 let btn6 = document.querySelector('#b6');
 let ht6 = document.querySelector('#h6');
+let btn10 = document.querySelector('#b10');
+let ht10 = document.querySelector('#h10');
 let mbtns = document.querySelectorAll('.products__image')
 // let mbtn2 = document.querySelector('#i2')
 // let mbtn3 = document.querySelector('#i3')
@@ -93,6 +79,10 @@ btn6.addEventListener('click', function () {
   ht6.classList.toggle('response__hiden-text--active')
   btn6.classList.toggle('btn--active')
 })
+btn10.addEventListener('click', function () {
+  ht10.classList.toggle('response__hiden-text--active')
+  btn10.classList.toggle('btn--active')
+})
 productsBtn.addEventListener('click', function () {
     // productsList.classList.toggle('products__list--active');
     // productsList.style.display = (productsList.style.display === 'grid') ? 'none' : 'grid';
@@ -101,36 +91,47 @@ productsBtn.addEventListener('click', function () {
   })
 mbtns[0].addEventListener('click', function(){
   modal[0].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[1].addEventListener('click', function(){
   modal[1].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[2].addEventListener('click', function(){
   modal[2].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[3].addEventListener('click', function(){
   modal[3].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[4].addEventListener('click', function(){
   modal[4].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[5].addEventListener('click', function(){
   modal[5].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[6].addEventListener('click', function(){
   modal[6].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[7].addEventListener('click', function(){
   modal[7].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[8].addEventListener('click', function(){
   modal[8].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[9].addEventListener('click', function(){
   modal[9].classList.add('modal--active')
+  console.log('пися')
 } )
 mbtns[10].addEventListener('click', function(){
   modal[10].classList.add('modal--active')
+  console.log('пися')
 } )
 
 escbtn[0].addEventListener('click', function(){

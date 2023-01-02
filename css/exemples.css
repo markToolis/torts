@@ -82,6 +82,9 @@ text-align: center;
 html{
     overflow-x: hidden;
 }
+.exemples__item-for-slider img{
+    width: 100%;
+}
 .exemples__slider{
 
     width: 1050px;
@@ -192,9 +195,21 @@ html{
         max-height: 400px   ;
     }
 }
+.exemples__slider--heden{
+    display: none;
+}
 @media (max-width:900px){
     .exemples__image{
         max-height: 375px   ;
+    }
+    .exemples__slider{
+        display: none;
+    }
+    .exemples__slider--heden{
+        display: block;
+    }
+    .exemples__slider--heden-2{
+        display: none;
     }
 }
 @media (max-width:860px){
@@ -236,6 +251,15 @@ html{
 @media(max-width:600px){
     .exemples__slider{
         margin-top: 0;
+    }
+    .exemples__slider{
+        display: none;
+    }
+    .exemples__slider--heden{
+        display: none;
+    }
+    .exemples__slider--heden-2{
+        display: block;
     }
     .exemples__item{
         grid-template-columns: 1fr;
