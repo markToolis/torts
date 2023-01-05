@@ -98,6 +98,9 @@ productsBtn.addEventListener('click', function () {
 mbtns[0].addEventListener('click', function(){
   modal[0].classList.add('modal--active')
 } )
+pBtn[0].addEventListener('click', function(){
+  modal[0].classList.add('modal--active')
+} )
 pBtn[1].addEventListener('click', function(){
   modal[1].classList.add('modal--active')
 } )

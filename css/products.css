@@ -93,6 +93,7 @@ border-radius: 28px;
 }
 
 .productd__button {
+	cursor: pointer;
 	display: none;
 	width: 100%;
 	height: 52px;
