@@ -7,12 +7,14 @@ $('.exemples__slider').slick({
 $('.avis__slider').slick({
   dots: true
 });
-$('.modal__slider').slick({
+$(document).ready(function() {
+  $('.modal__slider').slick({
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
 });
+})
 let productsBtn = document.querySelector('.products__btn');
 let productsList = document.querySelector('.products__list--hiden');
 let btn = document.querySelector('#b1');
@@ -54,6 +56,10 @@ let texts = document.querySelectorAll('.reponses__item')
 // let mod11 = document.querySelector('#m11')
 let escbtn = document.querySelectorAll('.modal__image')
 let modal = document.querySelectorAll('.modal')
+let image = modal[0].querySelectorAll('.hiden-script')
+let sl = modal[0].querySelector('.modal__slider')
+// let aroow = sl.querySelector('.slick-arrow')
+let pBtn = document.querySelectorAll('.productd__button')
 
 btn.addEventListener('click', function () {
   ht.classList.toggle('response__hiden-text--active')
@@ -91,47 +97,75 @@ productsBtn.addEventListener('click', function () {
   })
 mbtns[0].addEventListener('click', function(){
   modal[0].classList.add('modal--active')
-  console.log('пися')
 } )
+pBtn[1].addEventListener('click', function(){
+  modal[1].classList.add('modal--active')
+} )
+pBtn[2].addEventListener('click', function(){
+  modal[2].classList.add('modal--active')
+} )
+pBtn[3].addEventListener('click', function(){
+  modal[3].classList.add('modal--active')
+} )
+pBtn[4].addEventListener('click', function(){
+  modal[4].classList.add('modal--active')
+} )
+pBtn[5].addEventListener('click', function(){
+  modal[6].classList.add('modal--active')
+} )
+pBtn[6].addEventListener('click', function(){
+  modal[6].classList.add('modal--active')
+} )
+pBtn[7].addEventListener('click', function(){
+  modal[7].classList.add('modal--active')
+} )
+pBtn[8].addEventListener('click', function(){
+  modal[8].classList.add('modal--active')
+} )
+pBtn[9].addEventListener('click', function(){
+  modal[9].classList.add('modal--active')
+} )
+pBtn[10].addEventListener('click', function(){
+  modal[10].classList.add('modal--active')
+} )
+
+
 mbtns[1].addEventListener('click', function(){
   modal[1].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[2].addEventListener('click', function(){
   modal[2].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[3].addEventListener('click', function(){
   modal[3].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[4].addEventListener('click', function(){
   modal[4].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[5].addEventListener('click', function(){
   modal[5].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[6].addEventListener('click', function(){
   modal[6].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[7].addEventListener('click', function(){
   modal[7].classList.add('modal--active')
-  console.log('пися')
+
 } )
 mbtns[8].addEventListener('click', function(){
   modal[8].classList.add('modal--active')
-  console.log('пися')
 } )
 mbtns[9].addEventListener('click', function(){
   modal[9].classList.add('modal--active')
-  console.log('пися')
 } )
 mbtns[10].addEventListener('click', function(){
   modal[10].classList.add('modal--active')
-  console.log('пися')
 } )
 
 escbtn[0].addEventListener('click', function(){
