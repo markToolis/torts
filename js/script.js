@@ -33,32 +33,10 @@ let btn10 = document.querySelector('#b10');
 let ht10 = document.querySelector('#h10');
 let mbtns = document.querySelectorAll('.products__image')
 let texts = document.querySelectorAll('.reponses__item')
-// let mbtn2 = document.querySelector('#i2')
-// let mbtn3 = document.querySelector('#i3')
-// let mbtn4 = document.querySelector('#i4')
-// let mbtn5 = document.querySelector('#i5')
-// let mbtn6 = document.querySelector('#i6')
-// let mbtn7 = document.querySelector('#i7')
-// let mbtn8 = document.querySelector('#i8')
-// let mbtn9 = document.querySelector('#i9')
-// let mbtn10 = document.querySelector('#i10')
-// let mbtn11 = document.querySelector('#i11')
-// let mod1 = document.querySelector('#m1')
-// let mod2 = document.querySelector('#m2')
-// let mod3 = document.querySelector('#m3')
-// let mod4 = document.querySelector('#m4')
-// let mod5 = document.querySelector('#m5')
-// let mod6 = document.querySelector('#m6')
-// let mod7 = document.querySelector('#m7')
-// let mod8 = document.querySelector('#m8')
-// let mod9 = document.querySelector('#m9')
-// let mod10 = document.querySelector('#m10')
-// let mod11 = document.querySelector('#m11')
 let escbtn = document.querySelectorAll('.modal__image')
 let modal = document.querySelectorAll('.modal')
 let image = modal[0].querySelectorAll('.hiden-script')
 let sl = modal[0].querySelector('.modal__slider')
-// let aroow = sl.querySelector('.slick-arrow')
 let pBtn = document.querySelectorAll('.productd__button')
 
 btn.addEventListener('click', function () {
@@ -90,8 +68,6 @@ btn10.addEventListener('click', function () {
   btn10.classList.toggle('btn--active')
 })
 productsBtn.addEventListener('click', function () {
-    // productsList.classList.toggle('products__list--active');
-    // productsList.style.display = (productsList.style.display === 'grid') ? 'none' : 'grid';
     productsList.classList.toggle('products__list--active');
     productsBtn.classList.add('products__btn--active');
   })
@@ -228,33 +204,3 @@ texts[5].addEventListener('click', function(){
   ht6.classList.toggle('response__hiden-text--active')
   btn6.classList.toggle('btn--active')
 })
-
-  // $('.price_tabs-content button').click(function() {
-  //   const $this = $(this);
-  //   const on = $this.siblings('p').toggleClass('on').hasClass('on');
-  //   $this.text(on ? 'Закрыть' : $this.data('text'));
-  // }).each((i, n) => $(n).data('text', $(n).text()));
-//   $(document).ready(function() { 
-//     $(".products__btn").toggle(function() { 
-//       // Отображаем скрытый блок 
-//       $(".products__list--hiden").fadeIn(); // fadeIn - плавное появлени
-//       return false; // не производить переход по ссылке
-//     },  
-//     function() { 
-//       // Скрываем блок 
-//       $(".products__list--hiden").fadeOut(); // fadeOut - плавное исчезновение 
-//       return false; // не производить переход по ссылке
-//     }); // end of toggle() 
-//   }); // end of ready() 
-// $(document).ready(function() { 
-//     $("A#trigger").toggle(function() { 
-//       // Отображаем скрытый блок 
-//       $("DIV#box").fadeIn(); // fadeIn - плавное появлени
-//       return false; // не производить переход по ссылке
-//     },  
-//     function() { 
-//       // Скрываем блок 
-//       $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение 
-//       return false; // не производить переход по ссылке
-//     }); // end of toggle() 
-//   }); // end of ready() 
