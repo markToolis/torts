@@ -13,6 +13,7 @@ $(document).ready(function() {
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
+  swipe: true
 });
 })
 let productsBtn = document.querySelector('.products__btn');
