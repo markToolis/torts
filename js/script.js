@@ -12,7 +12,6 @@ $('.modal__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
-  cssEase: 'linear'
 });
 let productsBtn = document.querySelector('.products__btn');
 let productsList = document.querySelector('.products__list--hiden');
@@ -31,6 +30,7 @@ let ht6 = document.querySelector('#h6');
 let btn10 = document.querySelector('#b10');
 let ht10 = document.querySelector('#h10');
 let mbtns = document.querySelectorAll('.products__image')
+let texts = document.querySelectorAll('.reponses__item')
 // let mbtn2 = document.querySelector('#i2')
 // let mbtn3 = document.querySelector('#i3')
 // let mbtn4 = document.querySelector('#i4')
@@ -167,6 +167,30 @@ escbtn[9].addEventListener('click', function(){
 escbtn[10].addEventListener('click', function(){
   modal[10].classList.remove('modal--active')
 } )
+texts[0].addEventListener('click', function(){
+  ht10.classList.toggle('response__hiden-text--active')
+  btn10.classList.toggle('btn--active')
+})
+texts[1].addEventListener('click', function(){
+  ht2.classList.toggle('response__hiden-text--active')
+  btn2.classList.toggle('btn--active')
+})
+texts[2].addEventListener('click', function(){
+  ht3.classList.toggle('response__hiden-text--active')
+  btn3.classList.toggle('btn--active')
+})
+texts[3].addEventListener('click', function(){
+  ht4.classList.toggle('response__hiden-text--active')
+  btn4.classList.toggle('btn--active')
+})
+texts[4].addEventListener('click', function(){
+  ht5.classList.toggle('response__hiden-text--active')
+  btn5.classList.toggle('btn--active')
+})
+texts[5].addEventListener('click', function(){
+  ht6.classList.toggle('response__hiden-text--active')
+  btn6.classList.toggle('btn--active')
+})
 
   // $('.price_tabs-content button').click(function() {
   //   const $this = $(this);

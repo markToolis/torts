@@ -15,7 +15,7 @@
 	font-size: 40px;
 	line-height: 120%;
 	color: #ffffff;
-	padding-bottom: 40px;
+	padding-bottom: 15px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -87,7 +87,7 @@
 	width: 100%;
 	margin: 0 auto;
 	justify-content: space-between;
-	margin-top: 100px;
+	margin-top: 60px;
 }
 .mslider__item__h {
 	position: absolute;
@@ -158,21 +158,37 @@
 }
 @media (max-width: 760px) {
 	.modal__container {
-		width: 450px;
+		width: 550px;
 	}
 	.modal__slider {
-		height: 450px;
+		height: 550px;
 	}
 	.modal__block {
-		height: 450px;
+		height: 550px;
+	}
+	.modal__container {
+		width: 90%;
+	}
+	.modal__slider {
+		height: auto;
+	}
+	.modal__block {
+		height: auto;
 	}
 	.modal__box {
 		margin-top: 70px;
 	}
+	.modal .slick-next {
+		display: none !important;
+	}
+	.modal .slick-prev {
+		display: none !important;
+	
+}
 }
 @media (max-width: 640px) {
 	.modal__container {
-		width: 350px;
+		width: 480px;
 	}
 	.modal__image {
 		top: 40px;
@@ -180,19 +196,28 @@
 		width: 40px;
 	}
 	.modal__slider {
-		height: 350px;
+		height: auto;
 	}
 	.modal__block {
-		height: 350px;
+		height: auto;
+	}
+	.modal__container {
+		width: 90%;
+	}
+	.modal__slider {
+		height: auto;
+	}
+	.modal__block {
+		height: auto;
 	}
 	.modal__box {
 		margin-top: 60px;
 	}
 	.modal .slick-next {
-		right: -65px !important;
+		display: none;;
 	}
 	.modal .slick-prev {
-		left: -65px !important;
+		display: none;
 	}
 	.modal__title {
 		padding-bottom: 30px;
@@ -211,13 +236,22 @@
 }
 @media (max-width: 520px) {
 	.modal__container {
-		width: 270px;
+		width: 390px;
 	}
 	.modal__slider {
-		height: 270px;
+		height: 390px;
 	}
 	.modal__block {
-		height: 270px;
+		height: 390px;
+	}
+	.modal__container {
+		width: 90%;
+	}
+	.modal__slider {
+		height: auto;
+	}
+	.modal__block {
+		height: auto;
 	}
 	.modal__image {
 		top: 40px;
@@ -227,19 +261,32 @@
 	.modal__box {
 		margin-top: 40px;
 	}
-	.modal .slick-next {
-		right: -55px !important;
-		background-image: url(../img/Vector1.svg);
-	}
-	.modal .slick-prev {
-		left: -55px !important;
-		background-image: url(../img/Vector1.svg);
-	}
 	.modal__title {
 		padding-bottom: 30px;
 		font-size: 32px;
 	}
-	.modal .slick-dots {
-		display: none !important;
+}
+@media (max-width: 430px) {
+	.modal__container {
+		width: 370px;
 	}
+	.modal__slider {
+		height: auto;
+	}
+	.modal__block {
+		height:auto;
+	}
+
+}
+@media (max-width: 430px) {
+	.modal__container {
+		width: 90%;
+	}
+	.modal__slider {
+		height: auto;
+	}
+	.modal__block {
+		height: auto;
+	}
+	
 }

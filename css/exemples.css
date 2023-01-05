@@ -319,17 +319,23 @@ html{
         display: none !important;
     }
     .slick-next{
+      background-size: 11px 19px;
+        width: 11px !important; 
+        height: 19px;
         background-image: url(../img/Vector1.svg) !important;
-        right: -15px !important;
+        right: -0px !important;
     }
     .slick-prev{
+      background-size: 11px 19px;
+        width: 11px !important; 
+        height: 19px;
         background-image: url(../img/Vector1.svg) !important;
-        left: -15px !important;
+        left: -0px !important;
     }
     .exemples__slider{
         width: 100%;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 35px;
+        padding-left: 35px;
     }
     .exemples__image{
         max-height: 530px   ;

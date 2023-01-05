@@ -34,6 +34,7 @@ height: 100%;
   margin-left: 32px;
   height: auto;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .reponses__item--big {
@@ -58,6 +59,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 130%;
+cursor: pointer;
 /* identical to box height, or 26px */
 
 text-transform: uppercase;
