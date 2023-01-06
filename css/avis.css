@@ -1,4 +1,4 @@
-.avis{
+.avis {
   background: #F9F9F9;
   padding: 100px 0 170px;
 }
@@ -33,15 +33,15 @@
 }
 
 @media (max-width:1329px) {
-  .avis__slider{
+  .avis__slider {
     width: 870px;
     margin: 0 auto;
     margin-top: 70px;
   }
 }
 
-@media (max-width:1060px){
-  .avis__slider{
+@media (max-width:1060px) {
+  .avis__slider {
     width: 100%;
     padding-right: 100px;
     padding-left: 100px;
@@ -49,12 +49,18 @@
   }
 }
 
+@media (max-width:1000px) {
+  .avis__slider {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width:900px) {
-  .avis__slider--1{
+  .avis__slider--1 {
     display: none;
   }
 
-  .avis__slider--2{
+  .avis__slider--2 {
     display: block;
   }
 }
@@ -64,24 +70,24 @@
     display: none;
   }
 
-  .avis__slider--3{
+  .avis__slider--3 {
     display: block;
   }
 
-  .avis__slider{
+  .avis__slider {
     width: 100%;
     padding-right: 35px;
     padding-left:35px;
     height: auto;
   }
 
-  .avis{
+  .avis {
     background: #F9F9F9;
     margin-top: 100px;
     padding-bottom: 100px;
   }
 
-  .avis__slider{
+  .avis__slider {
     margin-top: 55px;
   }
 }

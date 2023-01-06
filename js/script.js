@@ -39,35 +39,29 @@ let modal = document.querySelectorAll('.modal')
 let image = modal[0].querySelectorAll('.hiden-script')
 let sl = modal[0].querySelector('.modal__slider')
 let pBtn = document.querySelectorAll('.productd__button')
+let еееtr = document.querySelectorAll('.menu-item')
+let heeader = document.querySelector('.header');
 
-btn.addEventListener('click', function () {
-  ht.classList.toggle('response__hiden-text--active')
-  btn.classList.toggle('btn--active')
-})
-btn2.addEventListener('click', function () {
-  ht2.classList.toggle('response__hiden-text--active')
-  btn2.classList.toggle('btn--active')
-})
-btn3.addEventListener('click', function () {
-  ht3.classList.toggle('response__hiden-text--active')
-  btn3.classList.toggle('btn--active')
-})
-btn4.addEventListener('click', function () {
-  ht4.classList.toggle('response__hiden-text--active')
-  btn4.classList.toggle('btn--active')
-})
-btn5.addEventListener('click', function () {
-  ht5.classList.toggle('response__hiden-text--active')
-  btn5.classList.toggle('btn--active')
-})
-btn6.addEventListener('click', function () {
-  ht6.classList.toggle('response__hiden-text--active')
-  btn6.classList.toggle('btn--active')
-})
-btn10.addEventListener('click', function () {
-  ht10.classList.toggle('response__hiden-text--active')
-  btn10.classList.toggle('btn--active')
-})
+
+еееtr[0].addEventListener('click', function(){
+  heeader.classList.remove('menu-opened')
+} )
+еееtr[1].addEventListener('click', function(){
+  heeader.classList.remove('menu-opened')
+} )
+еееtr[2].addEventListener('click', function(){
+  heeader.classList.remove('menu-opened')
+} )
+еееtr[3].addEventListener('click', function(){
+  heeader.classList.remove('menu-opened')
+} )
+еееtr[4].addEventListener('click', function(){
+  heeader.classList.remove('menu-opened')
+} )
+еееtr[5].addEventListener('click', function(){
+  heeader.classList.remove('menu-opened')
+} )
+
 productsBtn.addEventListener('click', function () {
     productsList.classList.toggle('products__list--active');
     productsBtn.classList.add('products__btn--active');

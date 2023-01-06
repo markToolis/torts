@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior:smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>PasNataly</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="./css/slick-theme.css" />
 		<link
 			rel="stylesheet"
@@ -32,12 +38,12 @@
 				<img src="/img/logod.svg" alt="" class="logo">
 				<nav class="nav">
 				  <ul class="nav__list">
-					<li class="nav__item"><a href="">Acheter un cours</a></li>
-					<li class="nav__item"><a href="">Nos cours</a></li>
-					<li class="nav__item"><a href="">Exemples D’oeuvre</a></li>
-					<li class="nav__item"><a href="">Avis</a></li>
-					<li class="nav__item"><a href="">Moi-même</a></li>
-					<li class="nav__item"><a href="">Réponses aux questions</a></li>
+					<li class="nav__item"><a href="#products">Acheter un cours</a></li>
+					<li class="nav__item"><a href="#description">Nos cours</a></li>
+					<li class="nav__item"><a href="#exemples">Exemples D’oeuvre</a></li>
+					<li class="nav__item"><a href="#avis">Avis</a></li>
+					<li class="nav__item"><a href="#about">Moi-même</a></li>
+					<li class="nav__item"><a href="#reponses">Réponses aux questions</a></li>
 				  </ul>
 				</nav>
 			  </header>
@@ -45,7 +51,7 @@
 				<div class="CTA-block">
 				  <h1 class="first__title">COURS DE PÂTISSERIE EN LIGNE</h1>
 				  <p class="first__subtitle">Devenez un vrai pâtissier et commencez à gagner de l'argent avec votre passion!</p>
-				  <a href="#" class="first__btn">Сhoisir un cours</a>
+				  <a href="#products" class="first__btn">Сhoisir un cours</a>
 				</div>
 				<img class="first__photo" src="./img/main-photo.jpg" alt="Main Photo">
 			  </div>
@@ -55,9 +61,9 @@
 				<div class="burger-wrap">
 				  <img class="logo" src="./img/logod.svg">
 				  <div class="burger-wrap__right">
-					<a class="burger-instagram" href=""><img src="./img/instagram.svg" alt=""></a>
-					<a class="burger-youtube" href=""><img src="./img/youtube.svg" alt=""></a>
-					<a class="burger-whatsapp" href=""><img src="./img/whatapp.svg" alt=""></a>
+					<a class="burger-instagram" href="https://instagram.com/pastry_nataly?igshid=YmMyMTA2M2Y="><img src="./img/instagram.svg" alt=""></a>
+					<a class="burger-youtube" href="https://youtube.com/@nataliapousaz"><img src="./img/youtube.svg" alt=""></a>
+					<a class="burger-whatsapp" href="https://wa.me/41782427393?text=Bonjour"><img src="./img/whatapp.svg" alt=""></a>
 					<div class="burger-container">
 					  <div id="burger">
 						<div class="bar topBar"></div>
@@ -67,17 +73,17 @@
 				  </div>
 				</div>
 				<ul class="menu">
-				  <li class="menu-item"><a class="menu-item--margin" href="#">Acheter un cours</a></li>
-				  <li class="menu-item"><a href="#">Nos cours</a></li>
-				  <li class="menu-item"><a href="#">Exemples D’oeuvre</a></li>
-				  <li class="menu-item"><a href="#">Avis</a></li>
-				  <li class="menu-item"><a href="#">Moi-même</a></li>
-				  <li class="menu-item"><a href="#">Réponses aux questions</a></li>
+				  <li class="menu-item"><a class="menu-item--margin" href="#products">Acheter un cours</a></li>
+				  <li class="menu-item"><a href="#description">Nos cours</a></li>
+				  <li class="menu-item"><a href="#exemples">Exemples D’oeuvre</a></li>
+				  <li class="menu-item"><a href="#avis">Avis</a></li>
+				  <li class="menu-item"><a href="#about">Moi-même</a></li>
+				  <li class="menu-item"><a href="#reponses">Réponses aux questions</a></li>
 				</ul>
 			  </div>
 			</div>
-		  </section>
-		<section class="products">
+		</section>
+		<section class="products" id="products">
 			<div class="modal" id="m1">
 				<img src="./img/Group.svg" alt="" class="modal__image" id="b1" />
 				<div class="modal__container">
@@ -368,7 +374,7 @@
 			</div>
 			<div class="container-2">
 				<h2 class="products__title">Sur l'apprentissage</h2>
-				<div class="products__list">
+				<div class="products__list products__list--main">
 					<div class="products__item">
 						<img src="./img/1.png" alt="" class="products__image" id="i1" />
 						<div class="products__container">
@@ -451,7 +457,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="description">
+		<section class="description" id="description">
 			<div class="container">
 			  <div class="checks">
 				<h2 class="checks__title">À QUI CES COURS CONVIENNENT-ILS?</h2>
@@ -472,7 +478,11 @@
 			  </div>
 			  <div class="learn-process">
 				<h2 class="learn-process__title">COMMENT SE DÉROULE LA FORMATION?</h2>
-				<p class="learn-process__subtitle">Ce cours est préenregistré en français + sous la vidéo il y a desinstructions textuelles. <br>Cependant, vous pouvez traduire tous lesdocuments écrits. <br>Les vidéos sont faites aussi clair que possible!</p>
+				<div class="learn-process__subtitle">
+          <p>Ce cours est préenregistré en français + sous la vidéo il y a desinstructions textuelles.</p>
+          <p class="central-text">Cependant, vous pouvez traduire tous lesdocuments écrits.</p>
+          <p>Les vidéos sont faites aussi clair que possible!</p>
+        </div>
 				<div class="learn-process__cards">
 				  <div class="learn-process__item learn-process__item--color grid-one">
 					<img class="learn-process__logo" src="./img/learn-card1.svg" alt="">
@@ -493,8 +503,8 @@
 				</div>
 			  </div>
 			</div>
-		  </section>
-		<section class="exemples">
+		</section>
+		<section class="exemples" id="exemples">
 			<div class="container-2">
 				<h2 class="exemples__title title">Exemples D’oeuvre</h2>
 				<div class="exemples__slider exemples__slider--heden">
@@ -578,8 +588,7 @@
 				</div>
 			</div>
 		</section>
-		
-		<section class="avis">
+		<section class="avis" id="avis">
 			<div class="container-2">
 				<h2 class="avis__title title">Avis</h2>
 				<div class="avis__slider avis__slider--3">
@@ -638,7 +647,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 			  <h2 class="about__title--hidden">À PROPOS DE L'AUTEUR</h2>
 			  <div class="about__content">
@@ -653,8 +662,8 @@
 				</div>
 			  </div>
 			</div>
-		  </section>
-		<section class="reponses">
+		</section>
+		<section class="reponses" id="reponses">
 			<div class="container-2">
 				<h2 class="reponses__title title">Réponses aux questions?</h2>
 				<div class="reponses__box">
@@ -670,9 +679,10 @@
 								connecter à la plate-forme de la formation, où à l'avenir vous
 								aurez accès à tous les cours (Que vous avez choisi). Le login et
 								le mot de passe pour se connecter à la plate-forme seront
-								également indiqués dans l'e-mail. Sur la plate-forme pratique
+								également indiqués dans l'e-mail.<br>
+								<span class="h10__padding">Sur la plate-forme pratique
 								pour l'apprentissage, vous pouvez regarder le cours à partir de
-								n'importe quel appareil qui vous convient!
+								n'importe quel appareil qui vous convient!</span>
 							</p>
 						</div>
 						<div class="reponses__item">
@@ -725,9 +735,9 @@
 							<p class="response__hiden-text" id="h5">
 								Sur la plate-forme de formation, vous aurez une liste des outils
 								nécessaires et des liens où ils peuvent être achetés en ligne
-								presque partout ! Sous chaque leçon vidéo, il y aura une Recette
-								Textuelle avec une liste d'ingrédients, que comprendriez-vous ce
-								que vous devez acheter pour cuisiner. Si vous avez des
+								presque partout !<br><span class="h5__padding">Sous chaque leçon vidéo, il y aura une Recette
+									Textuelle avec une liste d'ingrédients, que comprendriez-vous ce
+									que vous devez acheter pour cuisiner.</span> Si vous avez des
 								difficultés à trouver des ingrédients, des outils, ou d'autres
 								questions liées à la formation-vous pouvez écrire Natalia dans
 								WhatsApp.
@@ -758,23 +768,23 @@
 				  <h2 class="contacts__title">Nos contacts</h2>
 				  <div class="contacts__socials">
 					<div class="contacts__left">
-					  <a class="instagram">
+					  <a href="https://instagram.com/pastry_nataly?igshid=YmMyMTA2M2Y=" class="instagram">
 						<img class="contacts__images" src="./img/instagram.svg" alt="">
 						<p class="constacts__text">Abones-nous <br> sur <span class="instagram-color">Instagram</span></p>
 					  </a>
-					  <a href="https://www.whatsapp.com/?lang=ru" class="youtube">
+					  <a href="https://youtube.com/@nataliapousaz" class="youtube">
 						<img class="contacts__images" src="./img/youtube.svg" alt="">
 						<p class="constacts__text">Abones-nous <br> sur <span class="youtube-color">Youtube</span> </p>
 					  </a>
 					</div>
 					<div class="contacts__right">
-					  <a class="whatapp">
+					  <a href="https://wa.me/41782427393?text=Bonjour" class="whatapp">
 						<img class="contacts__images" src="./img/whatapp.svg" alt="">
 						<p class="constacts__text">Écrives-nous <br> à <span class="whatapp-color">Whats App</span></p>
 					  </a>
-					  <a class="email">
+					  <a href="mailto:pastrynataly@gmail.com" class="email">
 						<img class="contacts__images" src="./img/email.svg" alt="">
-						<p class="constacts__text">Écrives-nous <br> <span class="email-color">Artsem@gmail.com</span></p>
+						<p class="constacts__text">Écrives-nous <br> <span class="email-color">pastrynataly@gmail.com</span></p>
 					  </a>
 					</div>
 				  </div>
@@ -813,7 +823,7 @@
 				</nav>
 			  </div>
 			</div>
-		  </footer>
+		</footer>
 	</body>
 	<script>(function(){
 		var burger = document.querySelector('.burger-container'),
