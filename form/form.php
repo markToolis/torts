@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
     <link rel="stylesheet" href="../css/form.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
 </head>
 <body>
     <div class="box">
@@ -22,6 +23,7 @@
             <p>Prénom</p>
             <input type="text" required name="name" id="" class="name" placeholder="Igran">
             <input type="text" required name="text" id="" class="name" value="Cours Professionnel"  placeholder="Igran" style="display: none;">
+            <input type="text" required name="cost" id="" class="name" value="199"  placeholder="Igran" style="display: none;">
             <p>Email</p>
             <input type="email" required name="email" id="" class="email" placeholder="exemple@gmail.com">
             <p class="text">Après avoir rempli le formulaire et le paiement vous aurez accès au cours que vous avez choisi.</p>
@@ -32,13 +34,55 @@
                     <p>€ 199</p>
                 </div>
             </div>
-            <button class="" type="submit">
+            <button class="button" type="submit" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WFUTMVTF3CHPA" onClick='location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WFUTMVTF3CHPA"'>
+                
                 <div class="button__box">
-                    <p>Payer via</p>
+                    <a > Payer via</a></p>
                 <img src="./img/Logo.svg" alt="">
                 </div>
             </button>
         </form>
+        <!-- <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CHF" data-sdk-integration-source="button-factory"></script>
+        <script>
+          function initPayPalButton() {
+            paypal.Buttons({
+              style: {
+                shape: 'rect',
+                color: 'gold',
+                layout: 'vertical',
+                label: 'paypal',
+                
+              },
+      
+              createOrder: function(data, actions) {
+                return actions.order.create({
+                  purchase_units: [{"description":"Pàtisserie professionnel","amount":{"currency_code":"CHF","value":199}}]
+                });
+              },
+      
+              onApprove: function(data, actions) {
+                return actions.order.capture().then(function(orderData) {
+                  
+                  // Full available details
+                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+      
+                  // Show a success message within this page, e.g.
+                  const element = document.getElementById('paypal-button-container');
+                  element.innerHTML = '';
+                  eactions.redirect('thank_you.html');
+      
+                  // Or go to another URL:  actions.redirect('thank_you.html');
+                  
+                });
+              },
+      
+              onError: function(err) {
+                console.log(err);
+              }
+            }).render('#paypal-button-container');
+          }
+          initPayPalButton();
+        </script> -->
     </div>
 </body>
 </html>

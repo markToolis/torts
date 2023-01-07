@@ -2,9 +2,14 @@
 
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
     font-family: 'Comfortaa', cursive;
   }
-  
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .container {
   max-width: 1269px;
   margin: 0 auto;

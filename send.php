@@ -118,7 +118,8 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $text = $_POST['text'];
-// $url = 'http://www.pastrynataly.com/thank-you.html';
+$cost = $_POST['cost'];
+$url = 'www.pastrynataly.com/thank-you.html';
 // $comment = $_POST['comment'];
 
         // Server settings
@@ -134,22 +135,22 @@ $text = $_POST['text'];
 
 
     // Sender and recipient settings
-    $mail->setFrom('cyjovichzaxar@gmail.com', 'Sender Name');
-    $mail->addAddress($_POST['email'], 'Receiver Name');
+    $mail->setFrom('cyjovichzaxar@gmail.com', 'electronic assistant');
+    $mail->addAddress('cyjovichzaxar@gmail.com', 'Receiver Name');
     //$mail->addReplyTo('hiksend@gmail.com', 'Sender Name'); // to set the reply to
 
     // Setting the email content
     $mail->IsHTML(true);
 
     $mail->Subject = 'Заявка с тестового сайта';
-    $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$email. '<br>Почта этого пользователя: ' .$text;
+    $mail->Body    = '<br>имя: ' .$name . '<br>email: ' .$email. '<br>название курса: ' .$text. '<br>цена: ' .$cost.
     $mail->AltBody = '';
 
     if (!$mail->send()) {
         echo 'Error';
     } else {
-        echo 'All nice';
-        // header('Location: ' .$url);
+      exit;
+        header("Location: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WFUTMVTF3CHPA"); 
     }
 
 
