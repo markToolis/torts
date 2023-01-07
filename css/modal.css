@@ -112,7 +112,8 @@
 	position: absolute;
 }
 
-.modal__button {
+.modal__button  {
+	z-index: 15;
 	display: block;
 	width: 189px;
 	height: 54px;

@@ -23,9 +23,11 @@
             <input type="text" required name="name" id="" class="name" placeholder="Igran">
             <p>Email</p>
             <input type="email" required name="email" id="" class="email" placeholder="exemple@gmail.com">
+            <input type="text" required name="text" id="" class="name" value="voile et vase en isomalt"  placeholder="Igran" style="display: none;">
+            <input type="text" required name="cost" id="" class="name" value="€ 19"  placeholder="Igran" style="display: none;">
             <p class="text">Après avoir rempli le formulaire et le paiement vous aurez accès au cours que vous avez choisi.</p>
             <div class="form__box">
-                <img src="../img/11.png" alt="">
+                <img src="../img/19.png" alt="">
                 <div class="form__container">
                     <p class="big-text">voile et vase en isomalt</p>
 

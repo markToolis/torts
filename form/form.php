@@ -23,7 +23,7 @@
             <p>Prénom</p>
             <input type="text" required name="name" id="" class="name" placeholder="Igran">
             <input type="text" required name="text" id="" class="name" value="Cours Professionnel"  placeholder="Igran" style="display: none;">
-            <input type="text" required name="cost" id="" class="name" value="199"  placeholder="Igran" style="display: none;">
+            <input type="text" required name="cost" id="" class="name" value="€ 199"  placeholder="Igran" style="display: none;">
             <p>Email</p>
             <input type="email" required name="email" id="" class="email" placeholder="exemple@gmail.com">
             <p class="text">Après avoir rempli le formulaire et le paiement vous aurez accès au cours que vous avez choisi.</p>
@@ -34,7 +34,7 @@
                     <p>€ 199</p>
                 </div>
             </div>
-            <button class="button" type="submit" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WFUTMVTF3CHPA" onClick='location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WFUTMVTF3CHPA"'>
+            <button class="button" type="submit">
                 
                 <div class="button__box">
                     <a > Payer via</a></p>
