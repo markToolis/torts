@@ -199,7 +199,28 @@
 .modal {
 	top: 0px;
 }
-
+@media (max-height: 730px){
+	.modal__block{
+		height: 450px;
+	}
+	.modal__container{
+		width: 450px;
+	}
+	.modal__slider{
+		height: 450px;
+	}
+}
+@media (max-height: 690px){
+	.modal__block{
+		height: 400px;
+	}
+	.modal__container{
+		width: 400px;
+	}
+	.modal__slider{
+		height: 400px;
+	}
+}
 @media (max-width: 1080px) {
 	.modal .slick-dots {
 		display: flex !important;
