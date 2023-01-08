@@ -190,7 +190,7 @@ $url = 'www.pastrynataly.com/thank-you.html';
 
 
     // Sender and recipient settings
-    $mail->setFrom('cyjovichzaxar@gmail.com', 'electronic assistant');
+    $mail->setFrom('pastrynataly@gmail.com', 'electronic assistant');
     $mail->addAddress('pastrynataly@gmail.com', 'Receiver Name');
     //$mail->addReplyTo('hiksend@gmail.com', 'Sender Name'); // to set the reply to
 
