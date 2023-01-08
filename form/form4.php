@@ -35,8 +35,7 @@
             </div>
             <button class="" type="submit">
                 <div class="button__box">
-                    <p>Payer via</p>
-                <img src="./img/Logo.svg" alt="">
+                Passer à la caisse
                 </div>
             </button>
         </form>
