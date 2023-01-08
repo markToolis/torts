@@ -1,11 +1,11 @@
 /* Main Styles */
 
-
 body {
   max-width: 100%;
   overflow-x: hidden;
     font-family: 'Comfortaa', cursive;
   }
+
 html {
   max-width: 100%;
   overflow-x: hidden;
@@ -16,11 +16,7 @@ html {
 } 
   
   
-  
-  
-  
 /* Section "First" */
-  
   
 .first {
   background: #f9f9f9;
@@ -36,7 +32,6 @@ html {
   justify-content:space-between;
   align-items: center;
 }
-
 
 .nav__list {
   display: flex;
@@ -193,9 +188,7 @@ html {
   }
 }
 
-  
 .window .header {
-  /* background: #f9f9f9; */
   position: fixed;
   display: block;
   top: 0;
@@ -468,11 +461,7 @@ html {
 }
 
 
-
-
-
 /* Section "Description" */
-
 
 .description {
   background-color: #f9f9f9;
@@ -607,11 +596,7 @@ html {
 }
 
 
-
-
-
 /* Section "About" */
-
 
 .about {
   padding: 100px 0;
@@ -658,11 +643,7 @@ html {
 }
 
 
-
-
-
 /* Footer */
-
 
 .footer {
   padding: 100px 0;
@@ -728,16 +709,19 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 .box {
     background-color: #fff;
     width: 100%;
 }
+
 .block {
     width: 100%;
     position: absolute;
     top: 0;
     background-color: #fff;
 }
+
 .youtube-color {
   color: #FF0000;
 }
@@ -786,68 +770,63 @@ html {
   margin-top: 35px;
 }
 
-
 .mark__title {
-    display: block !important;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 120%;
-    text-align: center;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #c84e89 0%, #f15f79 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-top: 70px;
+  display: block !important;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #c84e89 0%, #f15f79 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 70px;
 }
-.mark__img  {
-    display: block !important;
-    margin: 0 auto;
-    margin-top: 45px;
-    margin-bottom: 45px;
+
+.mark__img {
+  display: block !important;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
   width: 120px;
 }
 
 .mark__text {
-    font-family: "Comfortaa";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
-    /* or 28px */
-
-    text-align: center;
-    color: #000000;
-    width: 726px;
-    display: block;
-    margin: 0 auto;
-    display: block !important;
+  font-family: "Comfortaa";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+  width: 726px;
+  display: block;
+  margin: 0 auto;
+  display: block !important;
   margin-bottom: 100px;
 }
+
 .mark__span {
-    display: block !important;
-    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-
-
+  display: block !important;
+  background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (max-width: 780px)
-{
+@media (max-width: 780px) {
   .mark__text {
-        width: 100%;
-        padding-right: 30px;
-        padding-left: 30px;
-        box-sizing: border-box ;
-        margin-bottom: 50px;
-    }
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box ;
+    margin-bottom: 50px;
+  }
 }
-/* Main Media */
 
+
+/* Main Media */
 
 @media (max-width: 1329px) {
   .container {
@@ -862,11 +841,7 @@ background-clip: text;
 }
 
 
-
-
-
 /* Media for Section "First" */
-
 
 @media (max-width: 1329px) {
   
@@ -1078,9 +1053,7 @@ background-clip: text;
 
 
 
-
 /* Media for Section "Description" */
-
 
 @media (max-width: 1329px) {
   .checks__title, .learn-process__title {
@@ -1207,12 +1180,7 @@ background-clip: text;
 
 
 
-
-
-
-
 /* Media for Section "About" */
-
 
 @media (max-width: 1329px) {
   .about__photo {
@@ -1386,9 +1354,7 @@ background-clip: text;
 
 
 
-
 /* Media for Footer */
-
 
 @media (max-width: 1329px) {
   .contacts__left, .contacts__right {
@@ -1490,6 +1456,3 @@ background-clip: text;
     font-size: 16px;
   }
 }
-
-
-
