@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -18,7 +18,7 @@
         <h1>
             Remplissez le formulaire pour effectuer l'achat
         </h1> 
-        <form action="../send.php" method="POST">
+        <form action="../send6.php" method="POST">
             <p>Prénom</p>
             <input type="text" required name="name" id="" class="name" placeholder="Igran">
             <p>Email</p>
@@ -27,7 +27,7 @@
             <input type="text" required name="cost" id="" class="name" value="€ 19"  placeholder="Igran" style="display: none;">
             <p class="text">Après avoir rempli le formulaire et le paiement vous aurez accès au cours que vous avez choisi.</p>
             <div class="form__box">
-                <img src="../img/6.png" alt="">
+                <img class="img" src="../img/6.png" alt="">
                 <div class="form__container">
                     <p class="big-text">technique de décorationeffet velours</p>
                     <p>€ 19</p>

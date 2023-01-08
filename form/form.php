@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -28,7 +28,7 @@
             <input type="email" required name="email" id="" class="email" placeholder="exemple@gmail.com">
             <p class="text">Après avoir rempli le formulaire et le paiement vous aurez accès au cours que vous avez choisi.</p>
             <div class="form__box">
-                <img src="../img/1.png" alt="">
+                <img class="img" src="../img/1.png" alt="">
                 <div class="form__container">
                     <p class="big-text">Cours Professionnel</p>
                     <p>€ 199</p>
@@ -37,7 +37,7 @@
             <button class="button" type="submit">
                 
                 <div class="button__box">
-                    Payer via
+                Passer à la caisse
                 </div>
             </button>
         </form>

@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"class="rr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>succès</title>
-    <link rel="stylesheet" href="./css/t.css">
+    <title>Document</title>
+    <style>
+        html {
+             display: block;
+        }
+        #text{
+	display: none;
+    }
+    *{
+        margin: 0;
+    }
+    </style>
+        <!-- <link rel="stylesheet" href="./css/t.css"> -->
+    <link rel="stylesheet" href="./css/denis-style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -14,56 +27,75 @@
 		/>
 </head>
 <body>
-    <div class="box"><h1>
+    <div class="block">
+    <div class="box"><h1 class="mark__title">
         succès
     </h1>
-    <div id="smart-button-container">
-        <div style="text-align: center;">
-          <div id="paypal-button-container"></div>
-        </div>
-      </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CHF" data-sdk-integration-source="button-factory"></script>
-    <script>
-      function initPayPalButton() {
-        paypal.Buttons({
-          style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'paypal',
-            
-          },
-  
-          createOrder: function(data, actions) {
-            return actions.order.create({
-              purchase_units: [{"description":"Pàtisserie professionnel","amount":{"currency_code":"CHF","value":199}}]
-            });
-          },
-  
-          onApprove: function(data, actions) {
-            return actions.order.capture().then(function(orderData) {
-              
-              // Full available details
-              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-  
-              // Show a success message within this page, e.g.
-              const element = document.getElementById('paypal-button-container');
-              element.innerHTML = '';
-              eactions.redirect('thank_you.html');
-  
-              // Or go to another URL:  actions.redirect('thank_you.html');
-              
-            });
-          },
-  
-          onError: function(err) {
-            console.log(err);
-          }
-        }).render('#paypal-button-container');
-      }
-      initPayPalButton();
-    </script>
-    <img src="./Groupt.png" alt="">
-    <p>Paiement effectué avec succès! Merci d'avoir acheté le cours! Si vous avez des questions, s'il vous plaît écrivez-nous à <span><br> Email: pastrynataly@gmail.com</span> </p></div>
+    <img class="mark__img" src="./Groupt.png" alt="">
+    <p class="mark__text">Paiement effectué avec succès! Merci d'avoir acheté le cours! Si vous avez des questions, s'il vous plaît écrivez-nous à <span class="mark__span"> Email: pastrynataly@gmail.com</span> </p></div>
+    <footer class="footer">
+			<div class="container">
+			  <div class="footer-content">
+				<div class="contacts">
+				  <h2 class="contacts__title">Nos contacts</h2>
+				  <div class="contacts__socials">
+					<div class="contacts__left">
+					  <a href="https://instagram.com/pastry_nataly?igshid=YmMyMTA2M2Y=" class="instagram">
+						<img class="contacts__images" src="./img/instagram.svg" alt="">
+						<p class="constacts__text">Abones-nous <br> sur <span class="instagram-color">Instagram</span></p>
+					  </a>
+					  <a href="https://youtube.com/@nataliapousaz" class="youtube">
+						<img class="contacts__images" src="./img/youtube.svg" alt="">
+						<p class="constacts__text">Abones-nous <br> sur <span class="youtube-color">Youtube</span> </p>
+					  </a>
+					</div>
+					<div class="contacts__right">
+					  <a href="https://wa.me/41782427393?text=Bonjour" class="whatapp">
+						<img class="contacts__images" src="./img/whatapp.svg" alt="">
+						<p class="constacts__text">Écrives-nous <br> à <span class="whatapp-color">Whats App</span></p>
+					  </a>
+					  <a href="mailto:pastrynataly@gmail.com" class="email">
+						<img class="contacts__images" src="./img/email.svg" alt="">
+						<p class="constacts__text">Écrives-nous <br> <span class="email-color">pastrynataly@gmail.com</span></p>
+					  </a>
+					</div>
+				  </div>
+				</div>
+				<div class="footer-menu">
+				  <h2 class="footer-menu__title">Menu</h2>
+				  <nav class="footer-nav">
+					<div class="footer-nav__left">
+					  <a href="" class="footer-nav__link">Acheter un cours</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Nos cours</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Exemples D’oeuvre</a>
+					</div>
+					<div class="footer-nav__right">
+					  <a href="" class="footer-nav__link">Avis</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Moi-même</a>
+					  <a href="" class="footer-nav__link footer-nav__link--margin">Réponses aux  questions</a>
+					</div>
+				  </nav>
+				</div>
+			  </div>
+			</div>
+			<div class="footer-hidden">
+			  <div class="container">
+				<h2 class="footer-hidden__title">Menu</h2>
+				<nav class="footer-hidden-nav">
+				  <div class="footer-hidden-nav__left">
+					<a href="" class="footer-hidden-nav__link">Acheter un cours</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Nos cours</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Exemples D’oeuvre</a>
+				  </div>
+				  <div class="footer-hidden-nav__right">
+					<a href="" class="footer-hidden-nav__link">Avis</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Moi-même</a>
+					<a href="" class="footer-hidden-nav__link footer-hidden-nav__link--margin">Réponses aux  questions</a>
+				  </div>
+				</nav>
+			  </div>
+			</div>
+		</footer>
+    </div>
 </body>
 </html>
