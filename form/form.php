@@ -37,52 +37,10 @@
             <button class="button" type="submit">
                 
                 <div class="button__box">
-                    <a > Payer via</a></p>
-                <img src="./img/Logo.svg" alt="">
+                    Payer via
                 </div>
             </button>
         </form>
-        <!-- <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CHF" data-sdk-integration-source="button-factory"></script>
-        <script>
-          function initPayPalButton() {
-            paypal.Buttons({
-              style: {
-                shape: 'rect',
-                color: 'gold',
-                layout: 'vertical',
-                label: 'paypal',
-                
-              },
-      
-              createOrder: function(data, actions) {
-                return actions.order.create({
-                  purchase_units: [{"description":"Pàtisserie professionnel","amount":{"currency_code":"CHF","value":199}}]
-                });
-              },
-      
-              onApprove: function(data, actions) {
-                return actions.order.capture().then(function(orderData) {
-                  
-                  // Full available details
-                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-      
-                  // Show a success message within this page, e.g.
-                  const element = document.getElementById('paypal-button-container');
-                  element.innerHTML = '';
-                  eactions.redirect('thank_you.html');
-      
-                  // Or go to another URL:  actions.redirect('thank_you.html');
-                  
-                });
-              },
-      
-              onError: function(err) {
-                console.log(err);
-              }
-            }).render('#paypal-button-container');
-          }
-          initPayPalButton();
-        </script> -->
     </div>
 </body>
 </html>
